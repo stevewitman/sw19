@@ -1,5 +1,5 @@
 import { async, TestBed } from '@angular/core/testing';
-import { UiToolbarModule } from './ui-toolbar.module';
+import { UiToolbarModule } from '@bb/ui-toolbar';
 
 describe('UiToolbarModule', () => {
   beforeEach(async(() => {
