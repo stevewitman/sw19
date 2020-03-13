@@ -10,5 +10,25 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "sw19": {
+      "tags": []
+    },
+    "sw19-e2e": {
+      "tags": [],
+      "implicitDependencies": ["sw19"]
+    },
+    "core-data": {
+      "tags": []
+    },
+    "core-state": {
+      "tags": []
+    },
+    "material": {
+      "tags": []
+    },
+    "ui-toolbar": {
+      "tags": []
+    }
+  }
 }
