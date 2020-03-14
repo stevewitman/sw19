@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  projects$: Observable<Project[]> = this.projectsFacade.allProjects;
+  projects$: Observable<Project[]> = this.projectsFacade.allProject$;
   project: Project;
   formGroup: FormGroup;
 

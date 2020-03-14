@@ -9,16 +9,16 @@
     <form [formGroup]="formGroup" (submit)="saved.emit(formGroup.value)">
       <mat-form-field class="w-100">
         <mat-label>Title</mat-label>
-        <input type="text" matInput placeholder="Title" name="title">
+        <input type="text" matInput placeholder="Title" formControlName="title">
       </mat-form-field>
 
       <mat-form-field class="w-100">
         <mat-label>Details</mat-label>
-        <input type="text" matInput placeholder="Details" name="details">
+        <input type="text" matInput placeholder="Details" formControlName="details">
       </mat-form-field>
 
       <span>Importance Level</span>
-      <mat-slider [thumbLabel]="true" class="w-100" name="importanceLevel"></mat-slider>
+      <mat-slider [thumbLabel]="true" class="w-100" formControlName="importanceLevel"></mat-slider>
 
     <mat-card-actions class="d-flex flex-row-reverse mb-0">
         <button type="submit" mat-button color="primary">Save</button>

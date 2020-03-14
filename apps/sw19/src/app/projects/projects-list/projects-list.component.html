@@ -5,8 +5,8 @@
   <mat-card-content>
     <mat-list>
       <mat-list-item *ngFor="let project of projects" (click)="selected.emit(project)">
-        <h4 matLine>title</h4>
-        <span matLine>details</span>
+        <h4 matLine>{{project.title}}</h4>
+        <span matLine>{{project.details}}</span>
         <button mat-icon-button (click)="deleted.emit(project)">
           <mat-icon>clear</mat-icon>
         </button>
