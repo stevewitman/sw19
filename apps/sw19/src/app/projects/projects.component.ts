@@ -58,8 +58,9 @@ export class ProjectsComponent implements OnInit {
   }
 
   delete(project: Project) {
-    this.projectsFacade.deleteProject(project);
+    this.projectsFacade.deleteProject(project)
   }
+
 
   initForm() {
     this.formGroup = this.formBuilder.group({
